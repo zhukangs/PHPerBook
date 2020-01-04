@@ -19,7 +19,7 @@ PHP 开发不单单只要会 PHP、MySQL方面的东西，我们还需要了解W
 
 ## GitBook链接
 
-为方便阅读，后期将同步至 GitBook（待完成）
+为方便阅读，后期将同步至 GitBook ：<https://interview.zam9.com>
 
 ## 关于作者
 
