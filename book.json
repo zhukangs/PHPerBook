@@ -1,0 +1,45 @@
+{
+  "plugins":[
+    "expandable-chapters",
+    "donate",
+    "hide-element",
+    "tbfed-pagefooter",
+    "-sharing",
+    "sharing-plus",
+    "-lunr",
+    "splitter",
+    "code"
+  ],
+  "pluginsConfig": {
+    "donate": {
+      "wechat": "https://test1-1256003521.cos.ap-guangzhou.myqcloud.com/images/wechatpay.jpg",
+      "alipay": "https://test1-1256003521.cos.ap-guangzhou.myqcloud.com/images/alpay.jpg",
+      "title": "",
+      "button": "Donate",
+      "alipayText": "支付宝捐赠",
+      "wechatText": "微信捐赠"
+    },
+    "hide-element": {
+      "elements": [".gitbook-link"]
+    },
+    "tbfed-pagefooter": {
+      "copyright":"Copyright &copy zhukang 2019",
+      "modify_label": "该文章修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "sharing": {
+      "douban": true,
+      "facebook": true,
+      "google": true,
+      "pocket": true,
+      "qq": true,
+      "qzone": true,
+      "twitter": true,
+      "weibo": true,
+      "all": [
+        "douban", "facebook", "google", "instapaper", "linkedin","twitter", "weibo",
+        "messenger","qq", "qzone","viber","whatsapp"
+      ]
+    }
+  }
+}

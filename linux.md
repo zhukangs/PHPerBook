@@ -2,7 +2,7 @@
 
 ## Linux篇
 
-**Linux 目录结构**
+### Linux 目录结构
 
 ```
 /
@@ -26,11 +26,11 @@
 └── var #用于存放运行时需要改变数据的文件，比如服务的日志文件
 ```
 
-**Linux基础**
+### Linux基础
 
 查看系统信息、内存信息、磁盘信息、负载信息、路由信息、端口信息、进程、登录用户、关机、重启、系统时间、用户管理、文件权限、压缩解压
 
-**命令与文件查找**
+### 命令与文件查找
 
 - which 寻找可执行文件
 
@@ -57,7 +57,7 @@ php: /usr/bin/php /usr/lib64/php /etc/php.d /etc/php.ini /usr/include/php /usr/s
 /usr/sbin/php-fpm
 ```
 
-**简述Linux下安装PHP的过程 **
+### 简述Linux下安装PHP的过程 
 
 ```
 安装软件之前先安装编译工具gcc、gcc-c++
@@ -68,7 +68,7 @@ Make 编译
 Make install安装
 ```
 
-**简述Linux下安装Mysql的过程**
+### 简述Linux下安装Mysql的过程
 
 ```
 Groupadd mysql 添加一个用户组mysql
@@ -79,7 +79,7 @@ Make
 Make all
 ```
 
-**简述Linux下安装apache的过程**
+### 简述Linux下安装apache的过程
 
 ```
 Cd /lamp/httpd 进去apache软件目录
@@ -88,7 +88,7 @@ Make
 Make all
 ```
 
-**推荐阅读资料**
+### 推荐阅读资料
 
 - [Linux学习归纳](https://www.zam9.com/blog/Linux01)
 
