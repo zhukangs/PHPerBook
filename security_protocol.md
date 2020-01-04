@@ -8,12 +8,12 @@
 
 **XSS 示例**
 
-```
+```php
 $input = $_GET["param"];
 echo "<div>" . $input . "</div>";
 ```
 
-```
+```php
 https://blog.maplemark.cn/test.php?param=这是一个测试!
 https://blog.maplemark.cn/test.php?param=<script>alert(/xss/)</script>
 ```
@@ -40,7 +40,7 @@ XSS 分类反射型 XSS：简单地将用户输入的数据反射给浏览器
 
 其内容为
 
-```
+```php
 <!--仅用于演示，假设该点赞为 GET-->
 <img src="https://segmentfault.com/api/article/1190000019050946/like?_=0faa0315ff95872d8b0f8da02e343ac7">
 ```
@@ -61,7 +61,7 @@ XSS 分类反射型 XSS：简单地将用户输入的数据反射给浏览器
 
 SQL 注入示例
 
-```
+```php
 $id = $_GET['id'];
 $sql = "SELECT * FROM `user` WHERE `id`={$id}";
 ```

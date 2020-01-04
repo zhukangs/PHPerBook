@@ -34,21 +34,21 @@
 
 - which 寻找可执行文件
 
-```
+```shell
 [root@localhost ~]# which php
 /usr/bin/php
 ```
 
 - whereis-特定目录寻找
 
-```
+```shell
 whereis php
 php: /usr/bin/php /usr/lib64/php /etc/php.d /etc/php.ini /usr/include/php /usr/share/php /usr/share/man/man1/php.1.gz
 ```
 
 - find-直接搜索硬盘
 
-```
+```shell
 [root@localhost ~]# find / -name php-fpm
 /run/php-fpm
 /etc/sysconfig/php-fpm
@@ -59,7 +59,7 @@ php: /usr/bin/php /usr/lib64/php /etc/php.d /etc/php.ini /usr/include/php /usr/s
 
 ### 简述Linux下安装PHP的过程 
 
-```
+```shell
 安装软件之前先安装编译工具gcc、gcc-c++
 拷贝源码包，解包解压缩
 Cd /lamp/php进入php目录
@@ -70,7 +70,7 @@ Make install安装
 
 ### 简述Linux下安装Mysql的过程
 
-```
+```shell
 Groupadd mysql 添加一个用户组mysql
 Useradd -g mysql mysql 添加一个mysql用户指定分组为mysql
 Cd /lamp/mysql 进入mysql目录
@@ -81,7 +81,7 @@ Make all
 
 ### 简述Linux下安装apache的过程
 
-```
+```shell
 Cd /lamp/httpd 进去apache软件目录
 ./configure –prefix=/usr/local/apache2/ –sysconfdir=/etc/httpd/ –with-included-apr
 Make

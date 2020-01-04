@@ -33,29 +33,20 @@ include_once 语句在脚本执行期间包含并运行指定文件。此行为�
 
 ### 常见数组函数
 
+```php
 array_count_values — 统计数组中所有的值
-
 array_flip — 交换数组中的键和值
-
 array_merge — 合并一个或多个数组
-
 array_multisort — 对多个数组或多维数组进行排序
-
 array_pad — 以指定长度将一个值填充进数组
-
 array_pop — 弹出数组最后一个单元(出栈)
-
 array_push — 将一个或多个单元压入数组的末尾(入栈)
-
 array_rand — 从数组中随机(伪随机)取出一个或多个单元
-
 array_keys — 返回数组中部分的或所有的键名
-
 array_values — 返回数组中所有的值
-
 count — 计算数组中的单元数目，或对象中的属性个数
-
 sort — 对数组排序
+```
 
 拓展阅读  [《PHP基础函数》](https://www.zam9.com/blog/php_basic01)
 
@@ -71,7 +62,7 @@ Session：会话机制(Session)在 PHP 中用于保持用户连续访问Web应�
 
 超全局变量 — 超全局变量是在全部作用域中始终可用的内置变量
 
-```
+```php
 $GLOBALS — 引用全局作用域中可用的全部变量
 $_SERVER — 服务器和执行环境信息
 $_GET — HTTP GET 变量
@@ -86,7 +77,6 @@ $HTTP_RAW_POST_DATA — 原生POST数据
 $http_response_header — HTTP 响应头
 $argc — 传递给脚本的参数数目
 $argv — 传递给脚本的参数数组
-
 ```
 
 - 超全局变量
@@ -178,7 +168,7 @@ php -ini | grep short_open_tag //查看 php.ini 配置
 
 - 动态设置
 
-```
+```php
 ini_set(string $varname , string $newvalue);
 
 ini_set('date.timezone', 'Asia/Shanghai'); //设置时区
@@ -226,7 +216,7 @@ php 代码问题，文件权限问题，资源问题
 
 ### 如何返回一个301重定向
 
-```
+```php
 header('HTTP/1.1 301 Moved Permanently');
 header('Location: https://blog.maplemark.cn');
 ```
@@ -235,7 +225,7 @@ header('Location: https://blog.maplemark.cn');
 
 #### MySQL
 
-```
+```php
 $conn = mysql_connect('127.0.0.1:3306', 'root', '123456');
 if (!$conn) {
     die(mysql_error() . "\n");
@@ -258,7 +248,7 @@ mysql_close($conn);
 
 #### MySQLi
 
-```
+```php
 $conn = @new mysqli('127.0.0.1:3306', 'root', '123456');
 if ($conn->connect_errno) {
     die($conn->connect_error . "\n");
@@ -282,7 +272,7 @@ $conn->close();
 
 #### PDO
 
-```
+```php
 $pdo = new PDO('mysql:host=127.0.0.1:3306;dbname=user', 'root', '123456');
 $pdo->exec("set names 'utf8'");
 $sql = "SELECT * FROM `user` LIMIT 1";

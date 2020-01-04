@@ -103,14 +103,14 @@ javascript不支持二维数组定义，可以用arr[0] = new array()来解决�
 
 ### Cookie 读写
 
-```
+```js
 document.cookie = "name=oeschger";
 document.cookie = "favorite_food=tripe";
 alert(document.cookie);
 // 显示: name=oeschger;favorite_food=tripe
 ```
 
-```
+```js
 document.cookie = "test1=Hello";
 document.cookie = "test2=World";
 var myCookie = document.cookie.replace(/(?:(?:^|.*;\s*)test2\s*\=\s*([^;]*).*$)|^.*$/, "$1");
